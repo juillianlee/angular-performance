@@ -7,7 +7,7 @@ import memo from 'memo-decorator';
   pure: true,
 })
 export class CountryFlagPipe implements PipeTransform {
-  // @memo()
+  @memo()
   transform(country: string): string | null {
     const flag = Object.entries(LIST_OF_FLAGS).filter(([_, value]) => {
       return value === country;

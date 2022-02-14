@@ -7,7 +7,7 @@ import memo from 'memo-decorator';
 })
 export class StatusUserPipe implements PipeTransform {
 
-  // @memo()
+  @memo()
   transform(status: number): string {
     console.log(status);
     switch (status) {
